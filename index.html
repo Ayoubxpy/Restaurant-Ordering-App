@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar+One&family=Smythe&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">    
+    <title>Restaurant Ordering APP</title>
+</head>
+<body>
+    <header>
+        <h1> Jimmy's Dinner</h1>
+        <p>The Best Burger And Pizzas In Town.</p>
+    </header>
+    <menu>
+        <div id = "menu-items" class="menu-items" >
+        </div>
+    </menu>
+    <section id="order-section" ></section>
+    <section class ="payment-modal hidden" id="payment-modal">
+        <form id="payment-form">
+            <h1>Enter Card Details</h1>
+            <input class="info-btn" type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <input class="info-btn" type="text" inputmode="numeric" id="cardNumber" name="cardNumber" placeholder="Enter Your Card Number" required maxlength="16" minlength="16">
+            <input class="info-btn" type="text" inputmode="numeric" id="cvv" name="cvv" placeholder="Enter Your CVV" required maxlength="4" minlength="3">
+            <button class="pay-btn" type="submit" id="pay-btn" data-payBtn="pay-btn">Pay</button>
+        </form>
+    </section>
+<script src="index.js" type="module" ></script>
+</body>
+</html>
